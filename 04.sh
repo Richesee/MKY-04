@@ -115,7 +115,12 @@ then
 	git clone https://github.com/Richesee/CALL
 	cd CALL
 	sh call.sh
-else
+
+elif [ $pil = '6' ];
 then
+	clear
+	figlet 'BYE NEXT TIME'
+	exit
+else
 	figlet 'BYE NEXT TIME'
 fi
