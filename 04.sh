@@ -49,7 +49,8 @@ echo $r"{"$w"@" $y"1" $w"@"$r"}" $g"INSTALL BAHAN"
 echo $r"{"$w"@" $y"2" $w"@"$r"}" $g"STABILKAN JARINGAN"
 echo $r"{"$w"@" $y"3" $w"@"$r"}" $g"INSTALL WIFIPHISER"
 echo $r"{"$w"@" $y"4" $w"@"$r"}" $g"INSTALL 200 TOOLS"
-echo $r"{"$w"@" $y"5" $w"@"$r"}" $g"EXIT "$w"["$r"KELUAR"$w"]"
+echo $r"{"$w"@" $y"5" $w"@"$r"}" $g"FAKE CALL"
+echo $r"{"$w"@" $y"6" $w"@"$r"}" $g"EXIT "$w"["$r"KELUAR"$w"]"
 echo $y
 read -p "Pilih Mana @: " pil
 if [ $pil = 1 ];
@@ -103,5 +104,18 @@ then
 	git clone https://github.com/Ramzi0407/Mr.RamziTools
 	cd Mr.RamziTools
 	sh Hack.sh
+	
+elif [ $pil = '5' ];
+then
+	cd $HOME
+	apt update && apt upgrade -y
+	pkg install git -y
+	pkg install bash -y
+	pkg isntall python2 -y
+	git clone https://github.com/Richesee/CALL
+	cd CALL
+	sh call.sh
+else
+then
+	figlet 'BYE NEXT TIME'
 fi
-
